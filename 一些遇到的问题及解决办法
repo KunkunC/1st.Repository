@@ -1,0 +1,19 @@
+问题：git clone的时候，报错gnutls_handshake() failed: The TLS connection was non-properly terminated.
+
+原因：代理设置出错
+
+解决方案：重置代理
+
+git config --global  --unset https.https://github.com.proxy 
+git config --global  --unset http.https://github.com.proxy 
+
+
+若需使用代理，http协议和socket协议的配置分别如下，以8080端口为例：
+
+# http
+git config --global http.https://github.com.proxy http://127.0.0.1:8080
+git config --global https.https://github.com.proxy https://127.0.0.1:8080
+
+# socket
+git config --global http.proxy 'socks5://127.0.0.1:8080'
+git config --global https.proxy 'socks5://127.0.0.1:8080'
