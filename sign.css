@@ -34,11 +34,11 @@
     width: 50%;
     border-bottom-left-radius: 10px;
     border-right: dashed rgb(124, 124, 124) 1px;
+    display:flex;
+    justify-content:center;
 }
-#signinform {
-    margin-top: 10%;
-    margin-left: 35%;
-    margin-right: 25%;
+.signin form {
+    margin-top: 30%;
 }
 #signinform input {
     border-radius: 10px;
@@ -52,12 +52,11 @@
     width: 50%;
     padding-bottom: 200px;
     border-bottom-right-radius: 10px;
+    display:flex;
+    justify-content:center;
 }
 #signupform {
-    margin: 0 auto;
-    margin-top: 10%;
-    margin-left: 35%;
-    margin-right: 25%;
+    margin-top: 30%;
 }
 #signupform input {
     border-radius: 10px;
