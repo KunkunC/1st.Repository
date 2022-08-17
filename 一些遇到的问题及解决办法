@@ -17,3 +17,13 @@ git config --global https.https://github.com.proxy https://127.0.0.1:8080
 # socket
 git config --global http.proxy 'socks5://127.0.0.1:8080'
 git config --global https.proxy 'socks5://127.0.0.1:8080'
+
+
+
+
+    form 表单中的div居中 HTML中的表单Form实现居中效果
+    2022-02-14 17:20:17
+
+    在表单外部加一个div,设置css:
+
+    display:flex;justify-content:center;
